@@ -114,176 +114,132 @@ h1{
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  max-width: 400%;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-.galeria2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    transition: .25s;
-    
-    /* Estilos para el tema oscuro 
-    @include dark {
-      background: #232223;
-      color: white;
-    }*/
+}
+
+#slideshow {
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 600px;
+  width: 100%;
+ 
+  box-sizing: border-box;
+}
+
+.slideshow-title {
+  font-family: 'Allerta Stencil';
+  font-size: 62px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25%;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.sub-heading {
+  padding-top: 50px;
+  font-size: 18px;
+} .sub-heading-two {
+  font-size: 15px;
+} .sub-heading-three {
+  font-size: 13px;
+} .sub-heading-four {
+  font-size: 11px;
+} .sub-heading-five {
+  font-size: 9px;
+} .sub-heading-six {
+  font-size: 7px;
+} .sub-heading-seven {
+  font-size: 5px;
+} .sub-heading-eight {
+  font-size: 3px;
+} .sub-heading-nine {
+  font-size: 1px;
+}
+
+.entire-content {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.content-carrousel figure {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #3b444b;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px); 
+} 
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 1px;
+}
+
+.content-carrousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from {
+      transform: rotateY(0deg);
+  } to {
+      transform: rotateY(360deg);
   }
-  
-  /* Créditos */
-  .credit {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: inherit;
-  }
-  
-  /* Barra de navegación */
-  .options {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    overflow: hidden;
-    min-width: 600px;
-    max-width: 900px;
-    width: calc(100% - 100px);
-    height: 400px;
-    
-    /* Media queries para la responsividad */
-    @for $i from 1 through 4 {
-      @media screen and (max-width: 798px - $i * 80) {
-        min-width: 600px - $i * 80;
-        .option:nth-child(#{6-$i}) {
-          display: none;
-        }
-      }
-    }
-    
-    /* Estilos para cada opción */
-    .option {
-      position: relative;
-      overflow: hidden;
-      min-width: 60px;
-      margin: 10px;
-      background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-      background-size: auto 120%;
-      background-position: center;
-      cursor: pointer;
-      transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-      
-      /* Colores predeterminados para las opciones */
-      @for $i from 1 through length($optionDefaultColours) {
-        &:nth-child(#{$i}) {
-          --defaultBackground: #{nth($optionDefaultColours, $i)};
-        }
-      }
-      
-      /* Estilos para opción activa */
-      &.active {
-        flex-grow: 10000;
-        transform: scale(1);
-        max-width: 600px;
-        margin: 0px;
-        border-radius: 40px;
-        background-size: auto 100%;
-        
-        .shadow {
-          box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-        }
-        
-        .label {
-          bottom: 20px;
-          left: 20px;
-          
-          .info > div {
-            left: 0px;
-            opacity: 1;
-          }
-        }
-      }
-      
-      /* Estilos para opción no activa */
-      &:not(.active) {
-        flex-grow: 1;
-        border-radius: 30px;
-        
-        .shadow {
-          bottom: -40px;
-          box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-        }
-        
-        .label {
-          bottom: 10px;
-          left: 10px;
-          
-          .info > div {
-            left: 20px;
-            opacity: 0;
-          }
-        }
-      }
-      
-      /* Sombra de la opción */
-      .shadow {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        height: 120px;
-        transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-      }
-      
-      /* Etiqueta de la opción */
-      .label {
-        display: flex;
-        position: absolute;
-        right: 0px;
-        height: 40px;
-        transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-        
-        /* Icono */
-        .icon {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          min-width: 40px;
-          max-width: 40px;
-          height: 40px;
-          border-radius: 100%;
-          background-color: white;
-          color: var(--defaultBackground);
-        }
-        
-        /* Información */
-        .info {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          margin-left: 10px;
-          color: white;
-          white-space: pre;
-          
-          /* Elementos de información */
-          > div {
-            position: relative;
-            transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-          }
-          
-          /* Texto principal */
-          .main {
-            font-weight: bold;
-            font-size: 1.2rem;
-          }
-          
-          /* Texto secundario con retardo de transición */
-          .sub {
-            transition-delay: .1s;
-          }
-        }
-      }
-    }
-  }
+}
