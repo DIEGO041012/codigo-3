@@ -327,6 +327,9 @@ p {
   display: none;
 
 }
+.tituloNuestrosProyectos{
+  display: none;
+}
 
 /* Media Query para dispositivos con un ancho máximo de 720px hacia abajo */
 /* Media Query para dispositivos con un ancho máximo de 720px hacia abajo */
@@ -445,6 +448,11 @@ p {
     z-index: 1;
     border-radius: 10px;
     border: 2px solid black;
+  }
+  .tituloNuestrosProyectos{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
   }
   .contenedortarjetas{
     display: flex;
