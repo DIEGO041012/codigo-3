@@ -231,6 +231,7 @@ p {
   padding-right:15px;
   display:inline-block;
   vertical-align: middle;
+  border-radius:210px;
 }
 
 .inner-header {
@@ -321,4 +322,172 @@ p {
 }
 .contactanos h4{
   margin-block-start: 15px;
+}
+.contenedortarjetas{
+  display: none;
+
+}
+
+/* Media Query para dispositivos con un ancho máximo de 720px hacia abajo */
+/* Media Query para dispositivos con un ancho máximo de 720px hacia abajo */
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar a {
+    padding: 1vh;
+    font-size: 16px;
+  }
+
+  .navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .waves {
+    height: 10px;
+    min-height: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .slideshow {
+    padding: 10px 0;
+    display: none;
+  }
+
+  .about {
+    margin-block-start: 3vh;
+  }
+
+  .about div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .galeria img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .contactanos {
+    padding: 10px;
+  }
+
+  .contactanos a {
+    font-size: 12px;
+  }
+
+  .contactanos h4 {
+    margin-block-start: 10px;
+  }
+
+  /* Convertir la sección de diapositivas en tarjetas */
+  .content-carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .content-carrousel figure {
+    width: calc(50% - 20px); /* Ajustar según la cantidad de tarjetas que desees en una fila */
+    margin: 10px;
+    border: none;
+    overflow: hidden;
+  }
+
+  .content-carrousel figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .content-carrousel figure .tarjeta {
+    box-shadow: 2px 2px 20px 5px;
+    border: solid black 1px;
+    color: #F1F1E7;
+    transition: .5s;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 200%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .content-carrousel figure .tarjeta h3,
+  .content-carrousel figure .tarjeta h5 {
+    margin: 0;
+  }
+
+  .content-carrousel figure .tarjeta .imgtarjeta {
+    width: 25vh;
+    height: 25vh;
+    z-index: 1;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .contenedortarjetas{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .imgtarjeta{
+    width: 25vh;
+    height: 25vh;
+    z-index: 1;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35vh;
+    height: 40vh;
+    border: solid black 1px;
+    color: #F1F1E7;
+    transition: .5s;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 200%;
+    border-radius: 10px;
+    margin: 0 35px;
+    margin-block-end: 5vh;
+}
+.tarjeta h3{
+  color: black;
+  text-decoration: none;
+}
+
+  /* Otras ajustes específicas para dispositivos móviles hasta 720px */
+}
+@media only screen and (max-width: 480px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
