@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap">
+    <link rel="stylesheet" href="codigo3.css"> <!-- Tu archivo de estilos personalizados -->
     <title>Código Turin - Inicio</title>
-    <link rel="shortcut icon" href="./img/Logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="codigo3.css">
 </head>
 <body>
 
@@ -23,10 +24,12 @@
         <path fill="#fff"
         d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
         C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-        c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+        c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7
+        c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2
+        c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
         </g>
-      </svg>
-      <h1>Bienvenidos a codigo Turin</h1>
+      <h1 class="bienvenidos">Bienvenidos a </h1>
+      <h1 class="nombrePagina"><b>Código Turin</b></h1>
     </div>
     
     <div>
@@ -46,80 +49,70 @@
   </div>
     
   <div class="content flex">
-      <p>Desarrolladores Diego londoño,Juan muñoz  </p>
+      <p>Desarrolladores:  Diego londoño
+        <br>Juan muñoz  </p>
   </div>
-
-  <section>
-
-  <section id="portafolio" class="slideshow">
-    <h1>Nuestro contenido empresarial</h1>
-    <div class="entire-content">
-      <div class="content-carrousel">
-        <figure class="shadow"><a href=""><img src="./img/Logistica.png"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/Palitos.png"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/patrimoine.png"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g4.jpg"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g5.jpg"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g6.jpg"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g7.jpg"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g8.jpg"/></a></figure>
-        <figure class="shadow"><a href=""><img src="./img/g9.jpg"/></a></figure>
+  
+  <div id="portafolio" class="container">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <img class="imgEtiquetas" src="./img/Palitos.png" alt="">
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="portafolio"  class="Proyectos">
+      <div class="face face2">
+        <div class="content">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <a href="#" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+   
+   <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <img class="imgEtiquetas" src="./img/Logistica.png" alt="">
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>  ¡Estamos aquí para hacerlo posible! En Logística SA, nos enorgullece ofrecerle servicios de envío, almacenamiento y transporte de encomiendas con un toque de profesionalismo y eficiencia.</p>
+          <a href="#" type="button">Visitar</a>
+        </div>
+      </div>
+   </div>
+   
+   
+   <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <img class="imgEtiquetas" src="./img/Cuerata.png" alt="">
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>¡Descubre la elegancia que solo el cuero auténtico puede ofrecer con Cuerata! 🌟 Sumérgete en el mundo del estilo y la calidad con nuestra exclusiva colección de productos de cuero, diseñados para realzar tu look con sofisticación y durabilidad.</p>
+          <a href="https://cuerata.com/" target="_blank" type="button">Visitar</a>
+        </div>
+      </div>
+   </div>
+ </div>
 
-    <div>
-        <h1 class="tituloNuestrosProyectos">Nuestros proyectos</h1>
-    </div>
 
-    <div id="portafolio"  class="contenedortarjetas">
-
-        <a class="enlacesproyectos" target="_blank" href="../trabajotcc/principal.html">
-        <section class="tarjeta">
-            <h3>LOGISTICA S.A</h3>
-            <img class="imgtarjeta" src="img/Logistica.png" alt="">
-            <h5></h5>
-        </section>
-        </a>
-        <a class="enlacesproyectos" target="_blank" href="../trabajo-colavorativo/">
-        <section class="tarjeta">
-            <h3>PATRIMOINE</h3>
-            <img class="imgtarjeta" src="img/patrimoine.png" alt="">
-            <h5></h5>
-        </section>
-        </a>
-        <a class="enlacesproyectos" target="_blank" href="../proyecto-blessed/blessed.html">
-        <section class="tarjeta">
-            <h3>PALITOS</h3>
-            <img class="imgtarjeta" src="img/Palitos.png" alt="">
-            <h5></h5>
-        </section>
-        </a>
-        <a class="enlacesproyectos" target="_blank" href="">
-        <section class="tarjeta">
-            <h3>titulo</h3>
-            <img class="imgtarjeta" src="img/yellow-4350140.jpg" alt="">
-            <h5></h5>
-        </section>
-        </a>
-
-    </div>
-</section>
-
-  <seccion id="sobreNosotros" class="about">
-    <div>
-    <h2>Quiénes Somos</h2>
-    <p>Nuestro talentoso equipo de diseñadores y desarrolladores trabaja incansablemente para crear sitios web que no solo sean visualmente impresionantes, sino también altamente funcionales y fáciles de usar. Cada sitio que creamos es una obra maestra única que refleja la esencia de tu empresa y cautiva a tus visitantes desde el primer momento.</p>
-  </div>
+ <seccion id="sobreNosotros" class="about">
   <div>
-    <br>
-    <h2>El éxito comienza con una gran página web</h2>
-    <p>No solo creamos páginas web, creamos experiencias digitales que cautivan a tu audiencia. ademas te llevamos de la mano para que tus clientes siempre esten en contacto y conoscan tus productos"</p>
-  </div>
-  </seccion>
+  <h2>Quiénes Somos</h2>
+  <p>Nuestro talentoso equipo de diseñadores y desarrolladores trabaja incansablemente para crear sitios web que no solo sean visualmente impresionantes, sino también altamente funcionales y fáciles de usar. Cada sitio que creamos es una obra maestra única que refleja la esencia de tu empresa y cautiva a tus visitantes desde el primer momento.</p>
+</div>
+<div>
+  <br>
+  <h2>El éxito comienza con una gran página web</h2>
+  <p>No solo creamos páginas web, creamos experiencias digitales que cautivan a tu audiencia. ademas te llevamos de la mano para que tus clientes siempre esten en contacto y conoscan tus productos"</p>
+</div>
+</seccion>
 
   <footer class="contactanos" id="contactanos">
+    <h1>CONTACTANOS</h1>
     <h3>Whatsapp</h3>
     <a href="https://wa.me/573106970049" target="_blank">3106970049</a>
     <a href="https://wa.me/573207764412" target="_blank">3207764412</a>
@@ -127,6 +120,7 @@
     <h4>Correo</h4>
     <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrjmssBFccDRbdlHGvBJcsCzMmnkkjcMFLNsWpRfHPLdXvHWNnkjSVwdffqnCvZGbQQgqq" target="_blank">Codigoturin@gmail.com</a>
   </footer>
-    <script src="codigo3.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
