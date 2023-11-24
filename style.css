@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    scroll-behavior: smooth; /* Activa el desplazamiento suave */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.barraNavegacion{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(
+        120deg,
+        red,
+        #2d2a26
+    );
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-around
+}
+.logo{
+    height: 15vh;
+    border-radius: 10px
+}
+.zonas{
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 17px;
+}
+.zona{
+    background-color: red;
+    
+}
+.enlaces{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.introduccion{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+.imagenPrincipal{
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+    padding: 25%;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20vh;
+    border-bottom-right-radius: 20vh;
+    opacity: 120%;
+}
+.imagenPrincipal:after{
+    contain: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    
+}
+.titulo{
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 35px;
+}
+.informacion{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 20vh;
+}
+.formularioMercancia{
+    color: white;
+    height: 25rem;
+    width: 30%;
+    background: #2d2a26;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 2px 2px 2px;
+    justify-content: space-around;
+    background: linear-gradient(
+        120deg,
+        red,
+        #2d2a26
+    );
+}
+.inputs{
+    width: 85%;
+    height: 2rem;
+    border-radius: 10px;
+    border: 0;
+    
+   
+}
+.inputs:focus {
+    /* Estilos que deseas aplicar cuando el campo de entrada tiene el enfoque */
+    border: 2px solid #ff0000; /* Cambia el borde cuando el campo de entrada está enfocado */
+    outline: none; /* Elimina el resaltado predeterminado al enfocar el campo */
+    /* Otros estilos de tu elección */
+  }
+  
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.boton{
+    width: 17vh;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    
+   
+    
+}
+.parrafoSobreNosotros{
+    color: white;
+}
+.sobreNosotros{
+    margin-block-start: 5vh;
+    height: 25vh;
+    padding: 7%;
+    font-size: 22px;
+    background: linear-gradient(
+        10deg,
+        red,
+        #2d2a26
+    );
+    border-top-left-radius: 20vh;
+    border-top-right-radius: 20vh;
+}
+.contactanos{
+    height: 35vh;
+    position: relative;
+    background: #2d2a26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo2{
+    height: 10vh;
+    border-radius: 10px;
+}
+.direccion{
+    color: white;
+}
