@@ -209,7 +209,6 @@ html, body {
     padding: 1vh;
     font-size: 16px;
   }
-
   .navbar {
     width: 100%;
     height: 10vh;
@@ -222,10 +221,6 @@ html, body {
   .bienvenidos {
     font-size: 4vh;
   }
-
-  .card {
-    
-  }
   .container .card .face.face1{
     transform: translateY(0);
     box-shadow:
@@ -236,6 +231,7 @@ html, body {
       -10px 0 80px rgb(44, 32, 135),
       10px 0 80px rgb(76, 81, 227);  
   }
+  
   .container .card .face.face1 .content{
     opacity: 1;
   }
@@ -258,9 +254,11 @@ html, body {
   }
 
   .content {
-    padding: 10px;
+    padding: 25px 0 0 0 ;
   }
-
+  .card{
+    padding-block-start: 40vh;
+  }
   .about {
     margin-block-start: 3vh;
   }
@@ -269,7 +267,7 @@ html, body {
     width: 100%;
     text-align: center;
   }
-
+  
   .about h2 {
     font-size: 18px;
   }
@@ -346,8 +344,8 @@ html, body {
     flex-direction: column;
     height: 100%;
   }
-  .tituloNuestrosProyectos{
-    font-size: 3vh;
+  .content{
+    padding:  0 0 0 ;
   }
 }
 
