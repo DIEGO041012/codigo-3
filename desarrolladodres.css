@@ -1,0 +1,135 @@
+.container2 {
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .border2 {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  .border2:hover {
+    border: 1px solid #fff;
+  }
+  .card2 {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .card11 {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .card3 {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .card3 {
+    background: url("./img/juan\ m1.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card3:hover {
+    background: url("./img/juan\ m1.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card3:hover h2 {
+    opacity: 1;
+  }
+  .card3:hover .fa {
+    opacity: 1;
+  }
+  .card11 {
+    background: url("./img/diego.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card11:hover {
+    background: url("./img/diego.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card11:hover h2 {
+    opacity: 1;
+  }
+  .card11:hover .fa {
+    opacity: 1;
+  }
+  .card2 {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card2:hover {
+    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card2:hover h2 {
+    opacity: 1;
+  }
+  .card2:hover .fa {
+    opacity: 1;
+  }
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #d11b1b;
+    margin: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .icons2 {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container .tituloPortafolio2{
+    position: absolute;
+    text-align: center;
+    font-size: 6vh;
+  }
