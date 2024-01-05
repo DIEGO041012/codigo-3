@@ -185,15 +185,18 @@ html, body {
   animation: fadeIn 1s ease-in-out;
   justify-content: space-around;
 }
-.about div{
+
+.about div {
   width: 35%;
 }
+
 .about h2 {
   font-size: 24px;
   color: #fff;
 }
 
-.about p {
+.about div p {
+  display: grid;
   font-size: 18px;
   line-height: 1.5;
   color: #ecf0f1; /* Cambia el color del texto según tus preferencias */
@@ -202,6 +205,7 @@ html, body {
 .about p:last-child {
   margin-bottom: 0;
 }
+
 
 
 @media only screen and (max-width: 1000px) {
